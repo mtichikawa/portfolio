@@ -13089,7 +13089,7 @@ div#notebook {
 <script>
 $( document ).ready(function(){
 
-            var cfg = {"base_numbering": 1, "nav_menu": {"height": "339px", "width": "425px"}, "number_sections": true, "sideBar": true, "skip_h1_title": false, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {"height": "calc(100% - 180px)", "left": "10px", "top": "150px", "width": "449px"}, "toc_section_display": true, "toc_window_display": true};
+            var cfg = {"base_numbering": 1, "nav_menu": {"height": "339px", "width": "425px"}, "number_sections": true, "sideBar": true, "skip_h1_title": false, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {"height": "calc(100% - 180px)", "left": "10px", "top": "150px", "width": "455px"}, "toc_section_display": true, "toc_window_display": true};
 
             // fire the main function with these parameters
             require(['nbextensions/toc2/toc2'], function (toc2) {
@@ -13103,7 +13103,7 @@ $( document ).ready(function(){
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[498]:</div>
+<div class="prompt input_prompt">In&nbsp;[65]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
@@ -13136,7 +13136,7 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[498]:</div>
+    <div class="prompt output_prompt">Out[65]:</div>
 
 
 
@@ -13182,7 +13182,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[468]:</div>
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13206,7 +13206,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[469]:</div>
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_columns</span> <span class="o">=</span> <span class="mi">999</span>
@@ -13223,7 +13223,7 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[469]:</div>
+    <div class="prompt output_prompt">Out[67]:</div>
 
 
 
@@ -13600,7 +13600,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[470]:</div>
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
@@ -13616,7 +13616,7 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[470]:</div>
+    <div class="prompt output_prompt">Out[68]:</div>
 
 
 
@@ -13669,13 +13669,14 @@ dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="remove-all-caps-in-column-names-and-some-fields">remove all-caps in column names and some fields<a class="anchor-link" href="#remove-all-caps-in-column-names-and-some-fields">&#182;</a></h3>
+<h3 id="remove-all-caps-in-column-names-and-some-fields">remove all-caps in column names and some fields<a class="anchor-link" href="#remove-all-caps-in-column-names-and-some-fields">&#182;</a></h3><p>All of the column names, borough names, and street names in all caps makes this dataframe difficult to work with. I'm quickly changing them all to lower case and if I need to re-capitalize borough or street names later in graphs or legends I will.</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[471]:</div>
+<div class="prompt input_prompt">In&nbsp;[69]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">lower</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
@@ -13692,260 +13693,22 @@ dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="remove-spaces">remove spaces<a class="anchor-link" href="#remove-spaces">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[472]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;_&#39;</span><span class="p">)</span>
-
-<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[472]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>timestamp</th>
-      <th>borough</th>
-      <th>zip_code</th>
-      <th>latitude</th>
-      <th>longitude</th>
-      <th>location</th>
-      <th>on_street_name</th>
-      <th>cross_street_name</th>
-      <th>off_street_name</th>
-      <th>number_of_persons_injured</th>
-      <th>number_of_persons_killed</th>
-      <th>number_of_pedestrians_injured</th>
-      <th>number_of_pedestrians_killed</th>
-      <th>number_of_cyclist_injured</th>
-      <th>number_of_cyclist_killed</th>
-      <th>number_of_motorist_injured</th>
-      <th>number_of_motorist_killed</th>
-      <th>contributing_factor_vehicle_1</th>
-      <th>contributing_factor_vehicle_2</th>
-      <th>contributing_factor_vehicle_3</th>
-      <th>contributing_factor_vehicle_4</th>
-      <th>contributing_factor_vehicle_5</th>
-      <th>collision_id</th>
-      <th>vehicle_type_code_1</th>
-      <th>vehicle_type_code_2</th>
-      <th>vehicle_type_code_3</th>
-      <th>vehicle_type_code_4</th>
-      <th>vehicle_type_code_5</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>2020-08-29 15:40:00</td>
-      <td>bronx</td>
-      <td>10466.0</td>
-      <td>40.89210</td>
-      <td>-73.833760</td>
-      <td>POINT (-73.83376 40.8921)</td>
-      <td>pratt avenue</td>
-      <td>strang avenue</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>Passing Too Closely</td>
-      <td>Unspecified</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>4342908</td>
-      <td>Sedan</td>
-      <td>Station Wagon/Sport Utility Vehicle</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2020-08-29 21:00:00</td>
-      <td>brooklyn</td>
-      <td>11221.0</td>
-      <td>40.69050</td>
-      <td>-73.919914</td>
-      <td>POINT (-73.919914 40.6905)</td>
-      <td>bushwick avenue</td>
-      <td>palmetto street</td>
-      <td>NaN</td>
-      <td>2</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2</td>
-      <td>0</td>
-      <td>Reaction to Uninvolved Vehicle</td>
-      <td>Unspecified</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>4343555</td>
-      <td>Sedan</td>
-      <td>Sedan</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>2020-08-29 18:20:00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>40.81650</td>
-      <td>-73.946556</td>
-      <td>POINT (-73.946556 40.8165)</td>
-      <td>8 avenue</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>Backing Unsafely</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>4343142</td>
-      <td>Station Wagon/Sport Utility Vehicle</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>2020-08-29 00:00:00</td>
-      <td>bronx</td>
-      <td>10459.0</td>
-      <td>40.82472</td>
-      <td>-73.892960</td>
-      <td>POINT (-73.89296 40.82472)</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>1047 simpson street</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>Unsafe Speed</td>
-      <td>Unspecified</td>
-      <td>Unspecified</td>
-      <td>Unspecified</td>
-      <td>NaN</td>
-      <td>4343588</td>
-      <td>Station Wagon/Sport Utility Vehicle</td>
-      <td>Station Wagon/Sport Utility Vehicle</td>
-      <td>Sedan</td>
-      <td>Motorcycle</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>2020-08-29 17:10:00</td>
-      <td>brooklyn</td>
-      <td>11203.0</td>
-      <td>40.64989</td>
-      <td>-73.933890</td>
-      <td>POINT (-73.93389 40.64989)</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>4609 snyder avenue</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>Failure to Yield Right-of-Way</td>
-      <td>Unspecified</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>4342953</td>
-      <td>Sedan</td>
-      <td>Sedan</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
+<h3 id="remove-spaces-in-column-names">remove spaces in column names<a class="anchor-link" href="#remove-spaces-in-column-names">&#182;</a></h3><p>This is also to make working with the dataframe easier. I'm changing the spaces in the column names to underscores.</p>
 
 </div>
 </div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="change-zip-and-collision-id-to-categorical-data">change zip and collision id to categorical data<a class="anchor-link" href="#change-zip-and-collision-id-to-categorical-data">&#182;</a></h3>
+<h3 id="change-zip-and-collision-id-to-categorical-data">change zip and collision id to categorical data<a class="anchor-link" href="#change-zip-and-collision-id-to-categorical-data">&#182;</a></h3><p>This is a universally common step for working with zip codes and id numbers.</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[473]:</div>
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">zip_code</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">zip_code</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
@@ -13966,68 +13729,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[474]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[474]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>timestamp                        datetime64[ns]
-borough                                  object
-zip_code                                 object
-latitude                                float64
-longitude                               float64
-location                                 object
-on_street_name                           object
-cross_street_name                        object
-off_street_name                          object
-number_of_persons_injured                 int64
-number_of_persons_killed                  int64
-number_of_pedestrians_injured             int64
-number_of_pedestrians_killed              int64
-number_of_cyclist_injured                 int64
-number_of_cyclist_killed                  int64
-number_of_motorist_injured                int64
-number_of_motorist_killed                 int64
-contributing_factor_vehicle_1            object
-contributing_factor_vehicle_2            object
-contributing_factor_vehicle_3            object
-contributing_factor_vehicle_4            object
-contributing_factor_vehicle_5            object
-collision_id                             object
-vehicle_type_code_1                      object
-vehicle_type_code_2                      object
-vehicle_type_code_3                      object
-vehicle_type_code_4                      object
-vehicle_type_code_5                      object
-dtype: object</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[475]:</div>
+<div class="prompt input_prompt">In&nbsp;[81]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -14043,7 +13745,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[475]:</div>
+    <div class="prompt output_prompt">Out[81]:</div>
 
 
 
@@ -14102,7 +13804,7 @@ dtype: object</pre>
       <td>2020-08-29 15:40:00</td>
       <td>bronx</td>
       <td>10466</td>
-      <td>40.89210</td>
+      <td>40.892100</td>
       <td>-73.833760</td>
       <td>POINT (-73.83376 40.8921)</td>
       <td>pratt avenue</td>
@@ -14133,7 +13835,7 @@ dtype: object</pre>
       <td>2020-08-29 21:00:00</td>
       <td>brooklyn</td>
       <td>11221</td>
-      <td>40.69050</td>
+      <td>40.690500</td>
       <td>-73.919914</td>
       <td>POINT (-73.919914 40.6905)</td>
       <td>bushwick avenue</td>
@@ -14160,42 +13862,11 @@ dtype: object</pre>
       <td>NaN</td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>2020-08-29 18:20:00</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>40.81650</td>
-      <td>-73.946556</td>
-      <td>POINT (-73.946556 40.8165)</td>
-      <td>8 avenue</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>Backing Unsafely</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>4343142</td>
-      <td>Station Wagon/Sport Utility Vehicle</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
       <th>3</th>
       <td>2020-08-29 00:00:00</td>
       <td>bronx</td>
       <td>10459</td>
-      <td>40.82472</td>
+      <td>40.824720</td>
       <td>-73.892960</td>
       <td>POINT (-73.89296 40.82472)</td>
       <td>NaN</td>
@@ -14226,7 +13897,7 @@ dtype: object</pre>
       <td>2020-08-29 17:10:00</td>
       <td>brooklyn</td>
       <td>11203</td>
-      <td>40.64989</td>
+      <td>40.649890</td>
       <td>-73.933890</td>
       <td>POINT (-73.93389 40.64989)</td>
       <td>NaN</td>
@@ -14252,6 +13923,37 @@ dtype: object</pre>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
+    <tr>
+      <th>6</th>
+      <td>2020-08-29 19:30:00</td>
+      <td>bronx</td>
+      <td>10459</td>
+      <td>40.825226</td>
+      <td>-73.887780</td>
+      <td>POINT (-73.88778 40.825226)</td>
+      <td>longfellow avenue</td>
+      <td>east 165 street</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Unspecified</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>4343004</td>
+      <td>Station Wagon/Sport Utility Vehicle</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
   </tbody>
 </table>
 </div>
@@ -14263,16 +13965,88 @@ dtype: object</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[82]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[82]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>timestamp                        datetime64[ns]
+borough                                  object
+zip_code                                 object
+latitude                                float64
+longitude                               float64
+location                                 object
+on_street_name                           object
+cross_street_name                        object
+off_street_name                          object
+number_of_persons_injured                 int64
+number_of_persons_killed                  int64
+number_of_pedestrians_injured             int64
+number_of_pedestrians_killed              int64
+number_of_cyclist_injured                 int64
+number_of_cyclist_killed                  int64
+number_of_motorist_injured                int64
+number_of_motorist_killed                 int64
+contributing_factor_vehicle_1            object
+contributing_factor_vehicle_2            object
+contributing_factor_vehicle_3            object
+contributing_factor_vehicle_4            object
+contributing_factor_vehicle_5            object
+collision_id                             object
+vehicle_type_code_1                      object
+vehicle_type_code_2                      object
+vehicle_type_code_3                      object
+vehicle_type_code_4                      object
+vehicle_type_code_5                      object
+dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Check-NaN's-and-possibly-drop-them">Check NaN's and possibly drop them<a class="anchor-link" href="#Check-NaN's-and-possibly-drop-them">&#182;</a></h2>
+<h2 id="Check-NaN's-and-possibly-drop-them">Check NaN's and possibly drop them<a class="anchor-link" href="#Check-NaN's-and-possibly-drop-them">&#182;</a></h2><p>This dataframe has a lot of missing data. Some of it makes sense: 'contributing_factor_vehicle_4' and 'vehicle_type_code_4' are empty if three or fewer vehicles were involved.</p>
+<p>Then there are many events missing borough and zip code. I expect most of my analysis will need this information, and so I have a choice here. If necessary, I could check these entries to see if latitude/longitude are not empty, search for another data source linking latitude/longitude to zip code or borough. I could do the same with entries including the street names but missing boroush and zip code.</p>
+<p>However, checking the numbers below, and considering the coarse nature of this analysis, it is easier to drop the missing data with the understanding that I could always come back if I needed more information.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Length of the dataframe and number of missing data before dropping and after dropping:</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[476]:</div>
+<div class="prompt input_prompt">In&nbsp;[74]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -14288,7 +14062,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[476]:</div>
+    <div class="prompt output_prompt">Out[74]:</div>
 
 
 
@@ -14305,7 +14079,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[477]:</div>
+<div class="prompt input_prompt">In&nbsp;[75]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -14321,7 +14095,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[477]:</div>
+    <div class="prompt output_prompt">Out[75]:</div>
 
 
 
@@ -14366,7 +14140,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[479]:</div>
+<div class="prompt input_prompt">In&nbsp;[76]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;borough&#39;</span><span class="p">,</span> <span class="s1">&#39;zip_code&#39;</span><span class="p">])</span>
@@ -14379,7 +14153,40 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[480]:</div>
+<div class="prompt input_prompt">In&nbsp;[83]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[83]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>49134</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[84]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -14395,7 +14202,7 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[480]:</div>
+    <div class="prompt output_prompt">Out[84]:</div>
 
 
 
@@ -14438,39 +14245,6 @@ dtype: int64</pre>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[481]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[481]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>49134</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14480,7 +14254,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[299]:</div>
+<div class="prompt input_prompt">In&nbsp;[79]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">pairplot</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -14496,13 +14270,13 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[299]:</div>
+    <div class="prompt output_prompt">Out[79]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;seaborn.axisgrid.PairGrid at 0x16bb09ab0&gt;</pre>
+<pre>&lt;seaborn.axisgrid.PairGrid at 0x1357972e0&gt;</pre>
 </div>
 
 </div>
@@ -14527,7 +14301,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[342]:</div>
+<div class="prompt input_prompt">In&nbsp;[80]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">(</span><span class="n">numeric_only</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
@@ -14543,7 +14317,7 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[342]:</div>
+    <div class="prompt output_prompt">Out[80]:</div>
 
 
 
@@ -14575,13 +14349,33 @@ dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Drop-some-columns">Drop some columns<a class="anchor-link" href="#Drop-some-columns">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;timestamp&#39;</span><span class="p">,</span> <span class="s1">&#39;borough&#39;</span><span class="p">,</span> <span class="s1">&#39;zip_code&#39;</span><span class="p">,</span> <span class="s1">&#39;latitude&#39;</span><span class="p">,</span> <span class="s1">&#39;longitude&#39;</span><span class="p">,</span> <span class="s1">&#39;on_street_name&#39;</span><span class="p">,</span> <span class="s1">&#39;number_of_persons_injured&#39;</span><span class="p">,</span> <span class="s1">&#39;number_of_persons_killed&#39;</span><span class="p">]]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Investigation-of-accidents-over-different-time-periods">Investigation of accidents over different time periods<a class="anchor-link" href="#Investigation-of-accidents-over-different-time-periods">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[332]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">timestamp</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">datetime_is_numeric</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -14597,7 +14391,7 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[332]:</div>
+    <div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -14628,7 +14422,7 @@ Name: timestamp, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[333]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">timestamp</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">day_name</span><span class="p">()</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
@@ -14644,61 +14438,7 @@ Name: timestamp, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[333]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&lt;AxesSubplot: &gt;</pre>
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
-<img src="nyc_traffic_analysis_files/nyc_traffic_analysis_29_1.png"
->
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Subsection-2.1">Subsection 2.1<a class="anchor-link" href="#Subsection-2.1">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[322]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">timestamp</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">isocalendar</span><span class="p">()</span><span class="o">.</span><span class="n">week</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">35</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[322]:</div>
+    <div class="prompt output_prompt">Out[18]:</div>
 
 
 
@@ -14730,6 +14470,60 @@ Name: timestamp, dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Subsection-2.1">Subsection 2.1<a class="anchor-link" href="#Subsection-2.1">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">timestamp</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">isocalendar</span><span class="p">()</span><span class="o">.</span><span class="n">week</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">35</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[19]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;AxesSubplot: &gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="nyc_traffic_analysis_files/nyc_traffic_analysis_33_1.png"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Investigation-of-accidents-over-different-areas">Investigation of accidents over different areas<a class="anchor-link" href="#Investigation-of-accidents-over-different-areas">&#182;</a></h1>
 </div>
 </div>
@@ -14743,7 +14537,7 @@ Name: timestamp, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[334]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;borough&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="nb">len</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
@@ -14767,7 +14561,7 @@ Name: timestamp, dtype: object</pre>
 
 
 <div class="output_png output_subarea ">
-<img src="nyc_traffic_analysis_files/nyc_traffic_analysis_34_0.png"
+<img src="nyc_traffic_analysis_files/nyc_traffic_analysis_36_0.png"
 >
 </div>
 
@@ -14788,7 +14582,7 @@ Name: timestamp, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[335]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">borough_population</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;bronx&#39;</span><span class="p">:</span> <span class="mi">1203789</span><span class="p">,</span> <span class="s1">&#39;brooklyn&#39;</span><span class="p">:</span> <span class="mi">2300664</span><span class="p">,</span> <span class="s1">&#39;manhattan&#39;</span><span class="p">:</span> <span class="mi">1487536</span><span class="p">,</span> <span class="s1">&#39;queens&#39;</span><span class="p">:</span> <span class="mi">1951598</span><span class="p">,</span> <span class="s1">&#39;staten island&#39;</span><span class="p">:</span> <span class="mi">378977</span><span class="p">}</span>
@@ -14810,7 +14604,7 @@ Name: timestamp, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[335]:</div>
+    <div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -14829,7 +14623,7 @@ Name: timestamp, dtype: object</pre>
 
 
 <div class="output_png output_subarea ">
-<img src="nyc_traffic_analysis_files/nyc_traffic_analysis_36_1.png"
+<img src="nyc_traffic_analysis_files/nyc_traffic_analysis_38_1.png"
 >
 </div>
 
@@ -14841,7 +14635,7 @@ Name: timestamp, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[324]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">day</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">timestamp</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">day_of_week</span>
@@ -14861,7 +14655,7 @@ Name: timestamp, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[324]:</div>
+    <div class="prompt output_prompt">Out[22]:</div>
 
 
 
@@ -14880,7 +14674,7 @@ Name: timestamp, dtype: object</pre>
 
 
 <div class="output_png output_subarea ">
-<img src="nyc_traffic_analysis_files/nyc_traffic_analysis_37_1.png"
+<img src="nyc_traffic_analysis_files/nyc_traffic_analysis_39_1.png"
 >
 </div>
 
@@ -14892,7 +14686,7 @@ Name: timestamp, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[336]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;borough&#39;</span><span class="p">,</span> <span class="n">day</span><span class="p">])</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="nb">len</span><span class="p">)</span><span class="o">.</span><span class="n">unstack</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
@@ -14908,7 +14702,7 @@ Name: timestamp, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[336]:</div>
+    <div class="prompt output_prompt">Out[23]:</div>
 
 
 
@@ -15021,7 +14815,7 @@ Name: timestamp, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[337]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;zip_code&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="nb">len</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
@@ -15045,7 +14839,7 @@ Name: timestamp, dtype: object</pre>
 
 
 <div class="output_png output_subarea ">
-<img src="nyc_traffic_analysis_files/nyc_traffic_analysis_40_0.png"
+<img src="nyc_traffic_analysis_files/nyc_traffic_analysis_42_0.png"
 >
 </div>
 
@@ -15064,7 +14858,7 @@ Name: timestamp, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[338]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;borough&#39;</span><span class="p">)[</span><span class="s1">&#39;number_of_persons_injured&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -15080,7 +14874,7 @@ Name: timestamp, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[338]:</div>
+    <div class="prompt output_prompt">Out[25]:</div>
 
 
 
@@ -15103,79 +14897,10 @@ Name: number_of_persons_injured, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[339]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;borough&#39;</span><span class="p">)[</span><span class="s1">&#39;number_of_persons_injured&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
-<img src="nyc_traffic_analysis_files/nyc_traffic_analysis_43_0.png"
->
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[407]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">colors</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;bronx&#39;</span><span class="p">:</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;brooklyn&#39;</span><span class="p">:</span> <span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="s1">&#39;manhattan&#39;</span><span class="p">:</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;queens&#39;</span><span class="p">:</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;staten island&#39;</span><span class="p">:</span> <span class="s1">&#39;purple&#39;</span><span class="p">}</span>
-<span class="n">accidents_by_zip</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;zip_code&#39;</span><span class="p">)[</span><span class="s1">&#39;number_of_persons_injured&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="p">[</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;borough&#39;</span><span class="p">]])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
-<img src="nyc_traffic_analysis_files/nyc_traffic_analysis_44_0.png"
->
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[409]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">accidents_by_zip</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;zip_code&#39;</span><span class="p">)[</span><span class="s1">&#39;number_of_persons_injured&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="p">[</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;borough&#39;</span><span class="p">]])</span>
 </pre></div>
 
     </div>
@@ -15204,20 +14929,47 @@ Name: number_of_persons_injured, dtype: int64</pre>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Here is an interesting chart. It shows the 40 streets with the most accidents. The color scheme is by borough.</p>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">colors</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;bronx&#39;</span><span class="p">:</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;brooklyn&#39;</span><span class="p">:</span> <span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="s1">&#39;manhattan&#39;</span><span class="p">:</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;queens&#39;</span><span class="p">:</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;staten island&#39;</span><span class="p">:</span> <span class="s1">&#39;purple&#39;</span><span class="p">}</span>
+<span class="n">accidents_by_zip</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;zip_code&#39;</span><span class="p">)[</span><span class="s1">&#39;number_of_persons_injured&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="p">[</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;borough&#39;</span><span class="p">]])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="nyc_traffic_analysis_files/nyc_traffic_analysis_46_0.png"
+>
+</div>
+
+</div>
 
 </div>
 </div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[408]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;on_street_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="p">[</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;borough&#39;</span><span class="p">]])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">accidents_by_zip</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;zip_code&#39;</span><span class="p">)[</span><span class="s1">&#39;number_of_persons_injured&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="p">[</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;borough&#39;</span><span class="p">]])</span>
 </pre></div>
 
     </div>
@@ -15249,6 +15001,48 @@ Name: number_of_persons_injured, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Here is an interesting chart. It shows the 40 streets with the most accidents. The color scheme is by borough.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;on_street_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="p">[</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;borough&#39;</span><span class="p">]])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="nyc_traffic_analysis_files/nyc_traffic_analysis_49_0.png"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>I looked briefly at the chart and realized there was a problem. I'm aware of 5th Ave in Manhattan, but in the chart it's color coded for Brooklyn. I checked out what was going on and found the following.</p>
 
 </div>
@@ -15256,7 +15050,7 @@ Name: number_of_persons_injured, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[390]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ave_5</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;on_street_name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;5 avenue&#39;</span><span class="p">]</span>
@@ -15317,7 +15111,7 @@ Name: borough, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[493]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_preC</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">timestamp</span> <span class="o">&lt;</span> <span class="s1">&#39;2020-03-22 00:00:00&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -15331,7 +15125,7 @@ Name: borough, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[497]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_preC</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;borough&#39;</span><span class="p">)[</span><span class="s1">&#39;number_of_persons_injured&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span>
@@ -15347,7 +15141,7 @@ Name: borough, dtype: int64
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[497]:</div>
+    <div class="prompt output_prompt">Out[32]:</div>
 
 
 
@@ -15366,7 +15160,7 @@ Name: borough, dtype: int64
 
 
 <div class="output_png output_subarea ">
-<img src="nyc_traffic_analysis_files/nyc_traffic_analysis_54_1.png"
+<img src="nyc_traffic_analysis_files/nyc_traffic_analysis_56_1.png"
 >
 </div>
 
