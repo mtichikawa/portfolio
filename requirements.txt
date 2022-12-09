@@ -5,3 +5,4 @@ numpy==1.16.6
 pandas==0.24.2
 xyzservices==2022.9.0
 ipywidgets==8.0.0
+jupyter-book==0.7.0
