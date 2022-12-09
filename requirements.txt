@@ -1,0 +1,7 @@
+bokeh==3.0.2
+geopandas==0.12.1
+ipython==8.7.0
+numpy==1.23.5
+pandas==1.5.2
+xyzservices==2022.9.0
+ipywidgets==8.0.0
