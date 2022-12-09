@@ -1,6 +1,6 @@
 bokeh==1.4.0
 geopandas==0.6.3
-ipython==8.7.0
+ipython==5.10.0
 numpy==1.23.5
 pandas==1.5.2
 xyzservices==2022.9.0
