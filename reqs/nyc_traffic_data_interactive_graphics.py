@@ -63,7 +63,6 @@ df = df.reset_index(drop=True)
 # In[3]:
 
 
-
 # Define function to switch from lat/long to mercator coordinates
 
 # derived from the Java version explained here: http://wiki.openstreetmap.org/wiki/Mercator
@@ -136,7 +135,7 @@ tooltips = [
 # In[7]:
 
 
-get_ipython().run_cell_magic('capture', '', '\n# Create the figure\np = figure(\n    title = \'Traffic Accidents, NYC, 2020\', \n    x_axis_type="mercator", \n    y_axis_type="mercator", \n    x_axis_label="Longitude",\n    y_axis_label = \'Latitude\', \n    tooltips = tooltips\n)\n\n# Add the underlying tile\np.add_tile(xyz.CartoDB.Positron)\n\n# Add the points for each accident with injuries\np.circle(\n    x = \'mercator_x\', \n    y = \'mercator_y\', \n    color = pcolor_mapper, \n    source = ColumnDataSource(data=df),\n    size = {\'field\': \'injury_bins\', \'transform\': psize_mapper},\n    alpha = 0.7\n)')
+get_ipython().run_cell_magic('capture', '', '\n# Create the figure\np = figure(\n    title = \'Traffic Accidents, NYC, 2020\', \n    x_axis_type="mercator", \n    y_axis_type="mercator", \n    x_axis_label="Longitude",\n    y_axis_label = \'Latitude\', \n    tooltips = tooltips\n)\n\n# Add the underlying tile\np.add_tile(xyz.CartoDB.Positron)\n\n# Add the points for each accident with injuries\np.circle(\n    x = \'mercator_x\', \n    y = \'mercator_y\', \n    color = pcolor_mapper, \n    source = ColumnDataSource(data=df),\n    size = {\'field\': \'injury_bins\', \'transform\': psize_mapper},\n    alpha = 0.7\n)\n')
 
 
 # # Display map
