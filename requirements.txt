@@ -1,4 +1,4 @@
-bokeh==3.0.2
+bokeh==1.4.0
 geopandas==0.12.1
 ipython==8.7.0
 numpy==1.23.5
